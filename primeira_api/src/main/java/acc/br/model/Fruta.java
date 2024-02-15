@@ -1,0 +1,13 @@
+package acc.br.model;
+
+import javax.persistence.Entity;
+
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
+@Entity
+public class Fruta {
+	
+	public String nome;
+	public int qtd;
+
+}
