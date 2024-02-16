@@ -1,0 +1,15 @@
+
+    @Query(value = "SELECT codproduto FROM tbcompra WHERE idcompra = ?", nativeQuery = true)
+    List<Compra> findByCodProduto(Long idCompra);
+	
+
+
+
+    public List<Compra> findByCodProduto(Long id){
+        Compra compra = new Compra();
+        compra.setCodproduto(id);
+
+        return compraRepository.findByCodProduto(id);
+    }
+
+	

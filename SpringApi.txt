@@ -1,0 +1,20 @@
+    @RequestMapping(value = "/registroLocaliza", produces = {"application/json"}, consumes = {"application/json"}, method = RequestMethod.GET)
+    @ApiOperation(value = "Return of registers localiza.", nickname = "getLocaliza", notes = "Return the registers localiza.", response = BrLocalizaResponse.class,
+            responseContainer = "List", authorizations = {@Authorization(value = "basicAuth")}, tags = {"Localiza",})
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Simulation response", response = OPrmRel.class, responseContainer = "List"),
+            @ApiResponse(code = 400, message = "Bad request", response = ValidationResultError.class),
+            @ApiResponse(code = 404, message = "Not found", response = Error.class),
+            @ApiResponse(code = 500, message = "Internal error", response = Error.class)})
+    ResponseEntity<Localiza> getLocaliza(
+/*
+            @ApiParam(value = "cod_cia", required = true) @Valid @RequestParam(value = "cod_cia", required = true) Integer cod_cia,
+            @ApiParam(value = "cod_ramo", required = true) @Valid @RequestParam(value = "cod_ramo", required = true) Integer cod_ramo,
+            @ApiParam(value = "num_cotizacion", required = true) @Valid @RequestParam(value = "num_cotizacion", required = true) String num_cotizacion,
+            @ApiParam(value = "nom_tabla", required = true) @Valid @RequestParam(value = "nom_tabla", required = true) String nom_tabla,
+            @ApiParam(value = "nom_columna", required = true) @Valid @RequestParam(value = "nom_columna", required = true) String nom_columna,
+            @ApiParam(value = "cod_fila", required = true) @Valid @RequestParam(value = "cod_fila", required = true) Integer cod_fila,
+            @ApiParam(value = "val_columna", required = true) @Valid @RequestParam(value = "val_columna", required = true) String val_columna
+*/
+
+    );

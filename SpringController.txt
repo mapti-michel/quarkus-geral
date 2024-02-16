@@ -1,0 +1,37 @@
+package acc.br.hello.controller;
+
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+public class HelloController {
+
+    @GetMapping("hello-word")
+    public ResponseEntity<String> get(){
+        return ResponseEntity.ok("Hello Word");
+    }
+
+}
+
+
+/*
+
+@RestController
+public class HelloEndPoint{
+
+    @RequestMapping("/")
+    public String home(){
+        return "Hello Word";
+    }
+
+    @RequestMapping(method=RequestMethod.POST, value = "/echo", produces="text/plain")
+    public String echo(@RequestBody String body){
+        return body;
+    }
+}
+
+ */

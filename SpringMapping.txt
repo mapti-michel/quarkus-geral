@@ -1,0 +1,6 @@
+
+    @Mapping(target = "id", ignore = true)
+    Localiza toEntity(final BrLocalizaRequest request);
+
+    @Mapping(target = "id", ignore = true)
+    Localiza toEntity(final BrLocalizaRequest request, @MappingTarget Localiza localiza);
